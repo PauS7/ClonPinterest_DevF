@@ -1,0 +1,236 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    padding: 15px 5px 5px 5px;
+    margin: 20px 0px;
+}
+
+
+.nav-elements{
+    margin:0px 8px;
+    color: gray;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+.logo-pint{
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#navbar-pinterest{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    color: gray;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+} 
+
+.inicio{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+.btn-crear{
+    display: flex;
+}
+
+.btn-crear i{
+    cursor: pointer;
+}
+
+.btn-crear a{
+    color: gray;
+}
+
+#search-icon{
+    display: none;
+}
+
+.finder{
+    flex-grow: 2;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid rgb(228, 224, 224);
+    background-color: rgb(228, 224, 224);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.finder:hover{
+    border: none;
+    background-color: rgb(190, 186, 186);
+}
+
+section{
+    width: 100%;
+}
+
+.content{
+    width: 90vw;
+    padding-top: 20px;
+    margin: auto;
+    column-count: 7;
+    column-gap: 1;
+}
+
+.card-image{
+    position: relative;
+}
+
+.card-image button{
+    display: none;
+    transition: all .5s;
+}
+
+.content img{
+    border-radius: 20px;
+}
+
+.content img:hover{
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
+
+.card-image:hover > .btn_save{
+    display: block;
+    transition: all .5s;
+    cursor: pointer;
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 25px;
+    top: 8%;
+    right: 10%;  
+}
+
+.card-image:hover > .btn_save:hover{
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
+
+.card-image:hover > .btn_subir{
+    display: block;
+    transition: all .5s;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgb(228, 224, 224);
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 100%;
+    top: 78%;
+    right: 30%;  
+  }
+
+  .card-image:hover > .btn_subir:hover{
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
+  .card-image:hover > .btn_menu{
+    display: block;
+    transition: all .5s;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgb(228, 224, 224);
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 100%;
+    top: 78%;
+    right: 8%;  
+  }
+
+  .card-image:hover > .btn_menu:hover{
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
+@media screen and (max-width: 1350px){
+    .content{
+        column-count: 6;
+        column-gap: 1;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .content{
+        column-count: 5;
+        column-gap: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .content{
+        column-count: 4;
+        column-gap: 1;
+    }
+
+    .link-hoy{
+        display: none;
+    }
+
+    .btn-crear{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #search-icon{
+        display: block;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .finder{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .content{
+        column-count: 3;
+        column-gap: 1;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .content{
+        column-count: 2;
+        column-gap: 1;
+    }
+}
